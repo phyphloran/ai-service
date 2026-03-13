@@ -1,0 +1,4 @@
+FROM alpine/ollama:latest
+COPY start-model.sh /start-model.sh
+RUN chmod +x /start-model.sh
+ENTRYPOINT ["/start-model.sh"]

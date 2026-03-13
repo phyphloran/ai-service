@@ -1,0 +1,28 @@
+services:
+  ai_service_backend:
+    build: .
+    container_name: ai_service_backend
+    restart: always
+    depends_on:
+      - aimodel
+    ports:
+      - "8080:8080"
+    networks:
+      - ai_network
+
+  aimodel:
+    build:
+      context: ./ai_model
+      dockerfile: dockerfile.ai
+    container_name: aimodel
+    restart: unless-stopped
+    ports:
+      - "11434:11434"
+    volumes:
+      - ./ollama_models:/root/.ollama
+    networks:
+      - ai_network
+
+networks:
+  ai_network:
+    driver: bridge
