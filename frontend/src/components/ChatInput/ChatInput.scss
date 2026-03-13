@@ -1,0 +1,125 @@
+.chat-input {
+  padding: 1rem 1.5rem 1.5rem;
+  background: linear-gradient(to top, rgba(10, 10, 15, 0.95) 0%, transparent 100%);
+
+  &__container {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                background 0.3s ease,
+                border-color 0.3s ease;
+
+    &:focus-within {
+      transform: scale(1.02);
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+  }
+
+  &__textarea {
+    flex: 1;
+    min-height: 24px;
+    max-height: 200px;
+    padding: 0.5rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: inherit;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    resize: none;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  &__button {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #10b981, #059669);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      color: white;
+    }
+
+    &:hover:not(:disabled) {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);
+    }
+
+    &:active:not(:disabled) {
+      transform: scale(0.95);
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  &__spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  &__hint {
+    margin: 0.75rem 0 0;
+    text-align: center;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.35);
+  }
+}
+
+@media (max-width: 640px) {
+  .chat-input {
+    padding: 0.75rem 1rem 1rem;
+
+    &__container {
+      padding: 0.5rem;
+      border-radius: 12px;
+    }
+
+    &__button {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+    }
+
+    &__hint {
+      display: none;
+    }
+  }
+}

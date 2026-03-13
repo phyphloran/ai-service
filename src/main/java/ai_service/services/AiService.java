@@ -1,15 +1,14 @@
 package ai_service.services;
 
 
-import ai_service.dtos.AiFluxResponseDto;
 import ai_service.dtos.AiRequestDto;
 import ai_service.dtos.AiResponseDto;
+import reactor.core.publisher.Flux;
 
 
 public interface AiService {
 
     AiResponseDto ask(AiRequestDto aiRequestDto);
 
-    AiFluxResponseDto askStream(AiRequestDto aiRequestDto);
-
+    Flux<String> askStream(AiRequestDto aiRequestDto);
 }

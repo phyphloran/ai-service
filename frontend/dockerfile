@@ -1,0 +1,10 @@
+FROM node:24-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 5173
+CMD ["npm", "run", "dev", "--", "--host"]
+
+# docker build -t ai_service_frontend .
+# docker run -d -p 5173:5173 --name ai_service_frontend ai_service_frontend

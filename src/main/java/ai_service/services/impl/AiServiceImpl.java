@@ -28,10 +28,10 @@ public class AiServiceImpl implements AiService {
     }
 
     @Override
-    public AiFluxResponseDto askStream(AiRequestDto aiRequestDto) {
+    public Flux<String> askStream(AiRequestDto aiRequestDto) {
         String question = aiRequestDto.question();
-        Flux<String> response = chatModel.stream(question);
-        return aiResponseDtoBuilder.toAiResponseStream(response);
+        return chatModel.stream(question)
+                .filter(chunk -> !chunk.isEmpty());
     }
 
 }

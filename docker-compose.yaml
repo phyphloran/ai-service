@@ -1,20 +1,33 @@
 services:
-  ai_service_backend:
+
+  ai-service-backend:
     build: .
-    container_name: ai_service_backend
+    container_name: ai-service-backend
     restart: always
     depends_on:
-      - aimodel
+      - ai-model
     ports:
       - "8080:8080"
     networks:
       - ai_network
 
-  aimodel:
+  ai-service-frontend:
+    build:
+      context: ./frontend
+    container_name: ai-service-frontend
+    restart: unless-stopped
+    ports:
+      - "5173:5173"
+    networks:
+      - ai_network
+    depends_on:
+      - ai-service-backend
+
+  ai-model:
     build:
       context: ./ai_model
       dockerfile: dockerfile.ai
-    container_name: aimodel
+    container_name: ai-model
     restart: unless-stopped
     ports:
       - "11434:11434"
