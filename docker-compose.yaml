@@ -1,7 +1,9 @@
 services:
 
   ai-service-backend:
-    build: .
+    build:
+      context: ./backend
+      dockerfile: dockerfile.backend
     container_name: ai-service-backend
     restart: always
     depends_on:
