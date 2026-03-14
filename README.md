@@ -30,10 +30,6 @@
 - Lombok
 - Maven
 
-## AI
-- Spring AI 
-- локальные LLM модели через Ollama
-
 ## Frontend
 - React
 - TypeScript
@@ -42,6 +38,10 @@
 ## DevOps
 - Docker
 - Docker Compose
+
+## AI
+- Spring AI 
+- локальные LLM модели через Ollama
 
 ---
 
@@ -60,6 +60,3 @@ cd ai-service
 ```bash
 docker-compose up
 ```
-
-
-
