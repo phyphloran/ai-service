@@ -43,6 +43,10 @@
       opacity: 0.5;
       cursor: not-allowed;
     }
+
+    &:focus-visible {
+      outline: none;
+    }
   }
 
   &__button {
