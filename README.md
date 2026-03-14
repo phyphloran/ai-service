@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  ### 🖥️ Интерфейс приложения
+  ### Интерфейс приложения
   
   | Главный экран | Диалог с AI |
   |:---:|:---:|
@@ -17,45 +17,40 @@
 
 ---
 
-# ✨ Возможности
+## Возможности
 
-- Интеграция с AI через **Spring AI**
-- Поддержка локальных LLM моделей через **Ollama**
-- Современный интерфейс на **React + TypeScript + Vite**
-- REST API на **Spring Boot 3**
+- Интеграция с AI через Spring AI
+- Поддержка локальных LLM моделей через Ollama
+- Современный интерфейс на React + TypeScript + Vite
+- REST API на Spring Boot 3
 - Чистая архитектура с разделением frontend / backend
-- Контейнеризация через **Docker**
+- Контейнеризация через Docker
 - Быстрая разработка и горячая перезагрузка
 
 ---
 
-# 🧰 Технологический стек
+## Технологический стек
 
-## Backend
-- Java 21
-- Spring Boot 3
-- Spring AI
-- Spring Web
-- Spring Validation
-- Lombok
-- Maven
+### Backend
+![Java](https://img.shields.io/badge/Java_21-007396?style=for-the-badge&logo=java&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![Spring AI](https://img.shields.io/badge/Spring_AI-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
 
-## Frontend
-- React
-- TypeScript
-- Vite
+### Frontend
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
-## DevOps
-- Docker
-- Docker Compose
+### DevOps
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-## AI
-- Spring AI 
-- локальные LLM модели через Ollama
+### AI
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
 
 ---
 
-# 🚀 Запуск проекта
+## Запуск проекта
 
 Клонировать репозиторий:
 ```bash
