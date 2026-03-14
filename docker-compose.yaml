@@ -5,7 +5,7 @@ services:
       context: ./backend
       dockerfile: dockerfile.backend
     container_name: ai-service-backend
-    restart: always
+    restart: unless-stopped
     depends_on:
       - ai-model
     ports:
