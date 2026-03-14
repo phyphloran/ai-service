@@ -31,7 +31,7 @@
 
 ## Технологический стек
 
-## Backend
+#### Backend
 - Java 21
 - Spring Boot 3
 - Spring AI
@@ -40,16 +40,16 @@
 - Lombok
 - Maven
 
-## Frontend
+#### Frontend
 - React
 - TypeScript
 - Vite
 
-## DevOps
+#### DevOps
 - Docker
 - Docker Compose
 
-## AI
+#### AI
 - Spring AI 
 - локальные LLM модели через Ollama
 
