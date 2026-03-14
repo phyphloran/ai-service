@@ -74,10 +74,14 @@ docker-compose up
 
 <div align="center">
   
-  <img src="https://github.com/phyphloran/ai-service/blob/main/pics/containers.png" alt="Docker контейнеры" width="90%" style="border: 2px solid #ddd; border-radius: 8px; padding: 4px;">
+  | Запущенные контейнеры |
+  |:---:|
+  | ![Docker контейнеры](https://github.com/phyphloran/ai-service/blob/main/pics/containers.png) |
   
   *Запущенные контейнеры проекта*
   
 </div>
+
+Проект будет доступен по адресу: **http://localhost:5173/**
 
 Проект будет доступен по адресу: **http://localhost:5173/**
