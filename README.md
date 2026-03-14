@@ -1,5 +1,17 @@
 # AI Service
 
+<div align="center">
+  
+  ### 🖥️ Интерфейс приложения
+  
+  | Главный экран | Диалог с AI |
+  |:---:|:---:|
+  | ![Главный экран](https://github.com/phyphloran/ai-service/blob/main/pics/main_pic.png) | ![Диалог с AI](https://github.com/phyphloran/ai-service/blob/main/pics/dialog_pic.png) |
+  
+  *Современный веб-интерфейс для взаимодействия с AI-моделями*
+  
+</div>
+
 Современное веб-приложение с интеграцией искусственного интеллекта, построенное на **Spring Boot** и **Spring AI** с фронтендом на **React + TypeScript**.  
 Проект предоставляет удобный интерфейс для взаимодействия с AI-моделями через REST API.
 
