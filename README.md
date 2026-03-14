@@ -74,14 +74,10 @@ docker-compose up
 
 <div align="center">
   
-  | Запущенные контейнеры |
+  | Контейнеры |
   |:---:|
   | ![Docker контейнеры](https://github.com/phyphloran/ai-service/blob/main/pics/containers.png) |
-  
-  *Запущенные контейнеры проекта*
-  
+    
 </div>
-
-Проект будет доступен по адресу: **http://localhost:5173/**
 
 Проект будет доступен по адресу: **http://localhost:5173/**
