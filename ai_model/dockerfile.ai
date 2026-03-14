@@ -1,4 +1,6 @@
 FROM alpine/ollama:latest
+WORKDIR /
 COPY start-model.sh /start-model.sh
-RUN chmod +x /start-model.sh
-ENTRYPOINT ["/start-model.sh"]
+RUN chmod +x /start-model.sh \
+    && sed -i 's/\r$//' /start-model.sh
+ENTRYPOINT ["sh", "/start-model.sh"]
