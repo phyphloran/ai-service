@@ -70,3 +70,8 @@ cd ai-service
 ```bash
 docker-compose up
 ```
+После успешного запуска вы должны увидеть работающие контейнеры:
+<div align="center"> <img src="https://github.com/phyphloran/ai-service/blob/main/pics/containers.png" alt="Docker контейнеры" width="90%">
+Запущенные контейнеры проекта
+</div>
+Проект будет доступен по адресу: http://localhost:5173/
