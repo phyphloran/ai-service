@@ -45,15 +45,19 @@
 
 # 🚀 Запуск проекта
 
+Клонировать репозиторий:
 ```bash
-# Клонировать репозиторий
-git clone https://github.com/phyphloran/ai-service.git
-
-# Перейти в папку проекта
+git clone https://github.com/phyphloran/ai-service.git 
+```
+Перейти в папку проекта:
+```bash
 cd ai-service
+```
 
-# Запустить сервисы
+Запустить сервисы:
+```bash
 docker-compose up
+```
 
 
 
